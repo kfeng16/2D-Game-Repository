@@ -6,7 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="04Bowl" type="Sprite2D" parent="."]
-position = Vector2(273, 441)
+position = Vector2(274, 441)
 scale = Vector2(6.9375, 7.875)
 texture = ExtResource("1_tennl")
 script = ExtResource("2_gqrc3")
