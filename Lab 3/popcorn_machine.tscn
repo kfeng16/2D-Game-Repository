@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxdp0bfmsodpd"]
+
+[ext_resource type="Texture2D" uid="uid://dq7cu7e41ey27" path="res://PopcornMachine.jpeg" id="1_bn5lr"]
+[ext_resource type="Texture2D" uid="uid://cilhn8aqrbm8x" path="res://Popcorn.jpeg" id="2_8k4lo"]
+
+[node name="PopcornMachine" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(590, 186)
+texture = ExtResource("1_bn5lr")
+
+[node name="Popcorn" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Popcorn"]
+position = Vector2(379, 108)
+scale = Vector2(0.228571, 0.222222)
+texture = ExtResource("2_8k4lo")
