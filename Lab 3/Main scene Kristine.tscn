@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://3m2a58rhldv2"]
 
-[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_tennl"]
-[ext_resource type="Script" path="res://04Bowl.gd" id="2_gqrc3"]
+[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_mgxl3"]
+[ext_resource type="Script" path="res://04Bowl.gd" id="2_bqhi1"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="04Bowl" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0.137255, 1)
 position = Vector2(274, 441)
 scale = Vector2(6.9375, 7.875)
-texture = ExtResource("1_tennl")
-script = ExtResource("2_gqrc3")
+texture = ExtResource("1_mgxl3")
+script = ExtResource("2_bqhi1")
