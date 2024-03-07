@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cilhn8aqrbm8x"
-path="res://.godot/imported/Popcorn.jpeg-0e3677e21447792a79de1e6b64182635.ctex"
+uid="uid://cfl7kf5y0w0tg"
+path="res://.godot/imported/pngimg.com - popcorn_PNG3.png-bb91e94ccc9936f735ba3256df1544a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Popcorn.jpeg"
-dest_files=["res://.godot/imported/Popcorn.jpeg-0e3677e21447792a79de1e6b64182635.ctex"]
+source_file="res://pngimg.com - popcorn_PNG3.png"
+dest_files=["res://.godot/imported/pngimg.com - popcorn_PNG3.png-bb91e94ccc9936f735ba3256df1544a6.ctex"]
 
 [params]
 

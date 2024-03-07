@@ -1,13 +1,69 @@
-[gd_scene load_steps=3 format=3 uid="uid://3m2a58rhldv2"]
+[gd_scene load_steps=5 format=3 uid="uid://3m2a58rhldv2"]
 
 [ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_mgxl3"]
 [ext_resource type="Script" path="res://04Bowl.gd" id="2_bqhi1"]
+[ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="3_7vjdy"]
+[ext_resource type="Script" path="res://Pngimg_com-PopcornPng3.gd" id="4_5s1yp"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="04Bowl" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0.137255, 1)
-position = Vector2(274, 441)
+position = Vector2(260, 532)
 scale = Vector2(6.9375, 7.875)
 texture = ExtResource("1_mgxl3")
 script = ExtResource("2_bqhi1")
+
+[node name="Pngimg_com-PopcornPng3" type="Sprite2D" parent="."]
+position = Vector2(262, 275)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng7" type="Sprite2D" parent="."]
+position = Vector2(455, 414)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng8" type="Sprite2D" parent="."]
+position = Vector2(150, 446)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng9" type="Sprite2D" parent="."]
+position = Vector2(168, 148)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng10" type="Sprite2D" parent="."]
+position = Vector2(675, 356)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng11" type="Sprite2D" parent="."]
+position = Vector2(90, 361)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng12" type="Sprite2D" parent="."]
+position = Vector2(441, 164)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng13" type="Sprite2D" parent="."]
+position = Vector2(559, 239)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
+
+[node name="Pngimg_com-PopcornPng14" type="Sprite2D" parent="."]
+position = Vector2(483, 332)
+scale = Vector2(0.0405496, 0.0281946)
+texture = ExtResource("3_7vjdy")
+script = ExtResource("4_5s1yp")
