@@ -1,14 +1,22 @@
 extends Sprite2D
-var speed = randi_range(1,5)
 
-# Called when the node enters the scene tree for the first time.
+
+# Declare variables
+@export var speed = randi_range(2,4)
+@export var dir = 1
+
 func _ready():
-	pass # Replace with function body.
+	pass
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	shoot()
+
+
+func shoot():
 	position.y += speed
-		
+	var popRotation = 0.2
+	rotate(popRotation)
+	popRotation = popRotation -1
+	pass
 	
 

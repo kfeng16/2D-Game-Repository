@@ -16,12 +16,13 @@ b = Vector2(-2.73874, 9.26984)
 
 [node name="04Bowl" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0.137255, 1)
-position = Vector2(254, 496)
-scale = Vector2(6.9375, 7.875)
+position = Vector2(447.5, 560.378)
+scale = Vector2(3.71875, 4.22128)
 texture = ExtResource("1_mgxl3")
 script = ExtResource("2_bqhi1")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="04Bowl"]
+position = Vector2(35.0189, -20.5211)
 physics_material_override = SubResource("PhysicsMaterial_nunbl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="04Bowl/StaticBody2D"]
