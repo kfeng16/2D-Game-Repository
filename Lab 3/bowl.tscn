@@ -11,7 +11,6 @@ a = Vector2(13.1171, 9.39683)
 b = Vector2(-2.73874, 9.26984)
 
 [node name="04Bowl" type="Sprite2D"]
-visible = false
 modulate = Color(1, 0, 0.137255, 1)
 position = Vector2(254, 496)
 scale = Vector2(6.9375, 7.875)
