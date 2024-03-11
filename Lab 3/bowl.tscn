@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgvidlxi86apc"]
+
+[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_6k4qf"]
+[ext_resource type="Script" path="res://04Bowl.gd" id="2_buuhl"]
+[ext_resource type="Script" path="res://bowlbottom.gd" id="3_jox7t"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nunbl"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_jfrcs"]
+a = Vector2(13.1171, 9.39683)
+b = Vector2(-2.73874, 9.26984)
+
+[node name="04Bowl" type="Sprite2D"]
+visible = false
+modulate = Color(1, 0, 0.137255, 1)
+position = Vector2(254, 496)
+scale = Vector2(6.9375, 7.875)
+texture = ExtResource("1_6k4qf")
+script = ExtResource("2_buuhl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_nunbl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-4.75676, 2.79365)
+shape = SubResource("SegmentShape2D_jfrcs")
+one_way_collision_margin = 5.0
+script = ExtResource("3_jox7t")
