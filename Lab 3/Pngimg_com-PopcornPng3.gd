@@ -1,14 +1,23 @@
 extends Sprite2D
-var speed = randi_range(1,5)
 
-# Called when the node enters the scene tree for the first time.
+# Declare variables
+@export var min_speed : float = 2
+@export var max_speed : float = 4
+@export var min_rotation : float = -1
+@export var max_rotation : float = 1
+var speed : float
+var rotation_speed : float
+
 func _ready():
-	pass # Replace with function body.
+	# Initialize properties randomly
+	speed = randi_range(min_speed, max_speed)
+	rotation_speed = randi_range(min_rotation, max_rotation) * 0.3
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.y += speed
-		
-	
+	shoot()
 
+func shoot():
+	position.y += speed
+	rotate(rotation_speed)
+	pass
+	

@@ -14,7 +14,8 @@ scale = Vector2(3.85667, 3.92262)
 texture = ExtResource("1_ymnw2")
 
 [node name="04Bowl" parent="." instance=ExtResource("1_sjvpr")]
-position = Vector2(256, 496)
+position = Vector2(209.5, 548.784)
+scale = Vector2(4.03125, 4.57601)
 
 [node name="Pngimg_com-PopcornPng3" type="Sprite2D" parent="."]
 position = Vector2(974, -6)
