@@ -1,14 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dlfixd0iugw6g"]
+[gd_scene load_steps=3 format=3 uid="uid://dlfixd0iugw6g"]
 
 [ext_resource type="Script" path="res://Panel.gd" id="1_6atnv"]
+[ext_resource type="Script" path="res://instructions.gd" id="1_7t08k"]
 
 [node name="Instructions" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 287.0
+offset_top = 38.0
+offset_right = 287.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7t08k")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
