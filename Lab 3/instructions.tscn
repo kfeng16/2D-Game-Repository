@@ -12,8 +12,8 @@ grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 244.0
+offset_bottom = 97.0
 script = ExtResource("1_6atnv")
 
 [node name="Label" type="Label" parent="Panel"]
