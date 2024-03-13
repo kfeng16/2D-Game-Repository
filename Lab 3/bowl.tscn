@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgvidlxi86apc"]
+[gd_scene load_steps=10 format=3 uid="uid://dgvidlxi86apc"]
 
 [ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_6k4qf"]
 [ext_resource type="Script" path="res://04Bowl.gd" id="2_buuhl"]
@@ -10,6 +10,15 @@
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_jfrcs"]
 a = Vector2(13.1171, 9.39683)
 b = Vector2(-2.73874, 9.26984)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_51r1d"]
+size = Vector2(20, 1.74603)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bnpvf"]
+size = Vector2(2.99824, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_024st"]
+size = Vector2(2.93694, 20)
 
 [node name="04Bowl" type="Sprite2D"]
 modulate = Color(1, 0, 0.137255, 1)
@@ -27,8 +36,25 @@ shape = SubResource("SegmentShape2D_jfrcs")
 one_way_collision_margin = 5.0
 script = ExtResource("3_jox7t")
 
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="StaticBody2D"]
+position = Vector2(0.144142, -0.888889)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/AnimatableBody2D"]
+position = Vector2(0, 13.2063)
+shape = SubResource("RectangleShape2D_51r1d")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D/AnimatableBody2D"]
+position = Vector2(11.3874, 4.19048)
+rotation = 0.380482
+shape = SubResource("RectangleShape2D_bnpvf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D/AnimatableBody2D"]
+position = Vector2(-12.3964, 3.42857)
+rotation = -0.190241
+shape = SubResource("RectangleShape2D_024st")
+
 [node name="Instructions" parent="." instance=ExtResource("4_xcwro")]
-offset_left = -36.3243
-offset_top = -122.921
-offset_right = -36.3243
-offset_bottom = -122.921
+offset_left = -34.018
+offset_top = -132.571
+offset_right = -34.018
+offset_bottom = -132.571
