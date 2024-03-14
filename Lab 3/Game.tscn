@@ -39,7 +39,6 @@ position = Vector2(0.907784, 1.46811)
 shape = SubResource("RectangleShape2D_6oeb8")
 
 [node name="Pngimg_com-PopcornPng4" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(411, 44)
 scale = Vector2(0.0405496, 0.0281946)
 texture = ExtResource("4_isj3k")

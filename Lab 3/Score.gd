@@ -14,3 +14,9 @@ func process_popcorn_collision(popcorn_value):
 # This function updates the label text to display the current score.
 func update_score_display():
 	text = "Score: " + str(score)
+
+
+func _on_sprite_2d_counter():
+	score = score + 1
+	update_score_display()
+	pass # Replace with function body.

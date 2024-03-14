@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvnmphxbyeg4g"]
+[gd_scene load_steps=5 format=3 uid="uid://bvnmphxbyeg4g"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_4kwh0"]
 [ext_resource type="PackedScene" uid="uid://d3avguxkxf641" path="res://popcorn.tscn" id="2_jblcd"]
 [ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="3_4ap17"]
-[ext_resource type="Script" path="res://score.gd" id="4_gvdo1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fg141"]
 size = Vector2(1436.2, 942.408)
@@ -21,14 +20,5 @@ texture = ExtResource("3_4ap17")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Popcorn/Area2D"]
 position = Vector2(39.5938, -2.5)
 shape = SubResource("RectangleShape2D_fg141")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 10.0
-offset_top = 15.0
-offset_right = 111.0
-offset_bottom = 48.0
-text = "Score
-"
-script = ExtResource("4_gvdo1")
 
 [connection signal="area_entered" from="Popcorn/Area2D" to="Popcorn" method="_on_area_2d_area_entered"]

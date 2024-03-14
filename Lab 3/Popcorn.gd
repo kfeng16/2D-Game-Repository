@@ -3,6 +3,7 @@ extends Sprite2D
 var speed = 200 # Speed of falling
 var rotation_speed: float
 var stuck_to_bowl: bool = false
+signal counter
 
 func _ready():
 	# Randomize the starting position
