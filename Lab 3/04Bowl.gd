@@ -16,9 +16,9 @@ func _process(delta):
 	var viewport_height = viewport_size.y
 	var viewport_width = viewport_size.x
 	if Input.is_action_pressed("ui_right") && position.x < viewport_width:
-		position.x += 15
+		position.x += 10
 	if Input.is_action_pressed("ui_left") && position.x > 0:
-		position.x -= 15
+		position.x -= 10
 	pass
 	pass
 
@@ -26,3 +26,7 @@ func _process(delta):
 
 	# ... any other logic you want to happen when a popcorn hits the bowl ...
 
+
+
+func _on_area_2d_area_entered(area):
+	pass

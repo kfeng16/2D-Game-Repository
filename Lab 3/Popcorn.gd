@@ -22,23 +22,23 @@ func _process(delta):
 		position.y = -texture.get_height()
 
 func _on_area_2d_area_entered(area):
-	if area.is_in_group("Bowl"):
-		print("Colliding with bowl, attempting to stick.")
-		stick_to_bowl(area.get_parent())  
-	else:
-		stick_to_bowl(area.get_parent())
-		print("Collided with something else: ", area.name)
-	
+	#if area.is_in_group("Bowl"):
+		#print("Colliding with bowl, attempting to stick.")
+		##stick_to_bowl(area.get_parent())  
+	#else:
+		#stick_to_bowl(area.get_parent())
+		#print("Collided with something else: ", area.name)
+	pass
 func stick_to_bowl(bowl):
-	self.get_parent().remove_child(self)
-	bowl.add_child(self)
-	self.position = bowl.to_local(global_position)
-	self.z_index = bowl.z_index + 1
-	speed = 0
-	rotation_speed = 0
-	stuck_to_bowl = true
-	set_process(false) # Optionally stop processing if no other updates are needed.
-
+	#self.get_parent().remove_child(self)
+	#bowl.add_child(self)
+	#self.position = bowl.to_local(global_position)
+	#self.z_index = bowl.z_index + 1
+	#speed = 0
+	#rotation_speed = 0
+	#stuck_to_bowl = true
+	#set_process(false) # Optionally stop processing if no other updates are needed.
+	pass
 
 func get_popcorn_info():
 	return {

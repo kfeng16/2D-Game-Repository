@@ -1,6 +1,6 @@
 extends Node2D
 
-var popcorn_scene = preload("res://popcornfall.tscn") # Adjust the path to your Popcorn scene
+var popcorn_scene = preload("res://Working scnee.tscn") # Adjust the path to your Popcorn scene
 var spawn_rate = 0.5 # Time in seconds between spawns
 var time_since_last_spawn = 0.0
 var stuck_to_bowl = false
