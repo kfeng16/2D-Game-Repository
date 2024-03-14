@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dlfixd0iugw6g"]
 
-[ext_resource type="Script" path="res://instructions.gd" id="1_7t08k"]
+[ext_resource type="Script" path="res://instructions.gd" id="1_0s421"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k4gyn"]
 font_size = 30
@@ -17,7 +17,7 @@ offset_right = -249.0
 offset_bottom = -87.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7t08k")
+script = ExtResource("1_0s421")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

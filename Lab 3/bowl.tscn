@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://dgvidlxi86apc"]
 
-[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_6k4qf"]
-[ext_resource type="Script" path="res://04Bowl.gd" id="2_buuhl"]
-[ext_resource type="Script" path="res://bowlbottom.gd" id="3_jox7t"]
+[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_rrjta"]
+[ext_resource type="Script" path="res://04Bowl.gd" id="2_rh3bm"]
+[ext_resource type="Script" path="res://bowlbottom.gd" id="3_qamrb"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nunbl"]
 
@@ -23,8 +23,8 @@ size = Vector2(2.93694, 20)
 modulate = Color(1, 0, 0.137255, 1)
 position = Vector2(254, 496)
 scale = Vector2(6.9375, 7.875)
-texture = ExtResource("1_6k4qf")
-script = ExtResource("2_buuhl")
+texture = ExtResource("1_rrjta")
+script = ExtResource("2_rh3bm")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_nunbl")
@@ -33,7 +33,7 @@ physics_material_override = SubResource("PhysicsMaterial_nunbl")
 position = Vector2(-4.75676, 2.79365)
 shape = SubResource("SegmentShape2D_jfrcs")
 one_way_collision_margin = 5.0
-script = ExtResource("3_jox7t")
+script = ExtResource("3_qamrb")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="StaticBody2D"]
 position = Vector2(0.144142, -0.888889)

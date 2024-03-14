@@ -1,12 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://3m2a58rhldv2"]
+[gd_scene load_steps=9 format=3 uid="uid://bjxd7g6o6rs7s"]
 
-[ext_resource type="Texture2D" uid="uid://da70qcoedyiuk" path="res://Unknown.jpeg" id="1_ymnw2"]
-[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="2_jkrsd"]
-[ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="3_7vjdy"]
-[ext_resource type="Script" path="res://04Bowl.gd" id="3_c8plm"]
-[ext_resource type="Script" path="res://Pngimg_com-PopcornPng3.gd" id="4_5s1yp"]
-[ext_resource type="PackedScene" uid="uid://bvnmphxbyeg4g" path="res://fallingpopcorn.tscn" id="5_7c87o"]
-[ext_resource type="PackedScene" uid="uid://dlfixd0iugw6g" path="res://instructions.tscn" id="6_cbmrr"]
+[ext_resource type="Texture2D" uid="uid://da70qcoedyiuk" path="res://Unknown.jpeg" id="1_bsu2w"]
+[ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="2_3ms80"]
+[ext_resource type="Script" path="res://04Bowl.gd" id="3_jopby"]
+[ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="4_isj3k"]
+[ext_resource type="Script" path="res://Pngimg_com-PopcornPng3.gd" id="5_xk1r7"]
+[ext_resource type="PackedScene" uid="uid://bvnmphxbyeg4g" path="res://fallingpopcorn.tscn" id="6_sidep"]
+[ext_resource type="PackedScene" uid="uid://dlfixd0iugw6g" path="res://instructions.tscn" id="7_ooolm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6oeb8"]
 size = Vector2(26.7801, 22.9362)
@@ -17,13 +17,13 @@ size = Vector2(26.7801, 22.9362)
 modulate = Color(0.839216, 0.858824, 0.862745, 1)
 position = Vector2(581, 337)
 scale = Vector2(3.85667, 3.92262)
-texture = ExtResource("1_ymnw2")
+texture = ExtResource("1_bsu2w")
 
 [node name="04Bowl" type="Sprite2D" parent="."]
 position = Vector2(422, 570)
 scale = Vector2(4.40625, 4.40625)
-texture = ExtResource("2_jkrsd")
-script = ExtResource("3_c8plm")
+texture = ExtResource("2_3ms80")
+script = ExtResource("3_jopby")
 
 [node name="Area2D" type="Area2D" parent="04Bowl"]
 collision_mask = 2
@@ -35,8 +35,8 @@ shape = SubResource("RectangleShape2D_6oeb8")
 [node name="Pngimg_com-PopcornPng4" type="Sprite2D" parent="."]
 position = Vector2(411, 44)
 scale = Vector2(0.0405496, 0.0281946)
-texture = ExtResource("3_7vjdy")
-script = ExtResource("4_5s1yp")
+texture = ExtResource("4_isj3k")
+script = ExtResource("5_xk1r7")
 
 [node name="Area2D" type="Area2D" parent="Pngimg_com-PopcornPng4"]
 collision_layer = 2
@@ -44,9 +44,9 @@ collision_layer = 2
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Pngimg_com-PopcornPng4/Area2D"]
 polygon = PackedVector2Array(24.6602, 35.4678, 24.6602, -35.4678, -542.546, -106.403, -567.207, 35.4678, -517.885, 141.871, -419.24, 212.807, -345.257, 177.339, -295.935, 177.339, -271.273, 212.807, -246.612, 248.275, -221.951, 283.742, -172.629, 319.21, -123.307, 319.21, -123.307, 390.146, -73.9844, 425.613, -24.6621, 496.549, 24.6602, 496.549, 98.6445, 496.549, 123.306, 496.549, 197.289, 496.549, 246.611, 461.081, 271.272, 425.613, 271.272, 390.146, 271.272, 354.678, 320.595, 319.21, 369.917, 319.21, 419.239, 354.678, 468.562, 319.21, 517.884, 283.742, 542.545, 248.275, 542.545, 177.339, 542.545, 106.403, 468.562, 70.9355, 419.239, 35.4678, 443.9, 0, 493.223, 35.4678, 542.545, -35.4678, 567.206, -106.403, 542.545, -141.871, 493.223, -212.807, 419.239, -248.275, 369.917, -283.742, 345.256, -283.742, 345.256, -354.678, 320.595, -425.613, 246.611, -496.549, 147.967, -532.017, 73.9834, -461.081, 24.6602, -390.146, 24.6602, -283.742, -49.3232, -248.275, -49.3232, -212.807, -73.9844, -177.339, -123.307, -141.871, -172.629, -141.871, -246.612, -248.275, -295.935, -248.275, -320.596, -283.742, -369.918, -319.21, -443.901, -390.146, -493.224, -319.21, -468.562, -248.275, -419.24, -248.275, -468.562, -212.807, -493.224, -141.871, -517.885, -141.871, -542.546, -106.403)
 
-[node name="Node2D" parent="." instance=ExtResource("5_7c87o")]
+[node name="Node2D" parent="." instance=ExtResource("6_sidep")]
 
-[node name="Instructions" parent="." instance=ExtResource("6_cbmrr")]
+[node name="Instructions" parent="." instance=ExtResource("7_ooolm")]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
