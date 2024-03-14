@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm1noycbxvtyo"]
+
+[ext_resource type="Script" path="res://Sprite2D.gd" id="1_b6fen"]
+[ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="1_qnd0r"]
+
+[node name="Popcorn" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(698.063, -158.938)
+scale = Vector2(0.0606568, 0.0502178)
+texture = ExtResource("1_qnd0r")
+script = ExtResource("1_b6fen")

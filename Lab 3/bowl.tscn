@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dgvidlxi86apc"]
+[gd_scene load_steps=9 format=3 uid="uid://dgvidlxi86apc"]
 
 [ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="1_6k4qf"]
 [ext_resource type="Script" path="res://04Bowl.gd" id="2_buuhl"]
 [ext_resource type="Script" path="res://bowlbottom.gd" id="3_jox7t"]
-[ext_resource type="PackedScene" uid="uid://dlfixd0iugw6g" path="res://instructions.tscn" id="4_xcwro"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nunbl"]
 
@@ -52,9 +51,3 @@ shape = SubResource("RectangleShape2D_bnpvf")
 position = Vector2(-12.3964, 3.42857)
 rotation = -0.190241
 shape = SubResource("RectangleShape2D_024st")
-
-[node name="Instructions" parent="." instance=ExtResource("4_xcwro")]
-offset_left = -34.018
-offset_top = -132.571
-offset_right = -34.018
-offset_bottom = -132.571

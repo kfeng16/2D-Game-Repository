@@ -1,6 +1,6 @@
 extends Sprite2D
 
-var speed = 150 # Speed of falling
+var speed = 200 # Speed of falling
 
 func _ready():
 	# Randomize the starting position

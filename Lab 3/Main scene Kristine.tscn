@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://3m2a58rhldv2"]
+[gd_scene load_steps=7 format=3 uid="uid://3m2a58rhldv2"]
 
 [ext_resource type="PackedScene" uid="uid://dgvidlxi86apc" path="res://bowl.tscn" id="1_sjvpr"]
 [ext_resource type="Texture2D" uid="uid://da70qcoedyiuk" path="res://Unknown.jpeg" id="1_ymnw2"]
 [ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="3_7vjdy"]
 [ext_resource type="Script" path="res://Pngimg_com-PopcornPng3.gd" id="4_5s1yp"]
+[ext_resource type="PackedScene" uid="uid://bvnmphxbyeg4g" path="res://fallingpopcorn.tscn" id="5_7c87o"]
+[ext_resource type="PackedScene" uid="uid://dlfixd0iugw6g" path="res://instructions.tscn" id="6_cbmrr"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,8 +16,8 @@ scale = Vector2(3.85667, 3.92262)
 texture = ExtResource("1_ymnw2")
 
 [node name="04Bowl" parent="." instance=ExtResource("1_sjvpr")]
-position = Vector2(209.5, 548.784)
-scale = Vector2(4.03125, 4.57601)
+position = Vector2(220, 540)
+scale = Vector2(4.6875, 5.12501)
 
 [node name="Pngimg_com-PopcornPng3" type="Sprite2D" parent="."]
 position = Vector2(974, -6)
@@ -64,3 +66,16 @@ position = Vector2(571, -1.99998)
 scale = Vector2(0.0405496, 0.0281946)
 texture = ExtResource("3_7vjdy")
 script = ExtResource("4_5s1yp")
+
+[node name="Node2D" parent="." instance=ExtResource("5_7c87o")]
+
+[node name="Instructions" parent="." instance=ExtResource("6_cbmrr")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 449.0
+offset_top = 266.0
+offset_right = 449.0
+offset_bottom = 266.0

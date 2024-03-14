@@ -1,33 +1,31 @@
 [gd_scene load_steps=3 format=3 uid="uid://dlfixd0iugw6g"]
 
-[ext_resource type="Script" path="res://Panel.gd" id="1_6atnv"]
 [ext_resource type="Script" path="res://instructions.gd" id="1_7t08k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k4gyn"]
+font_size = 30
+font_color = Color(0.0235294, 0.0235294, 0.0235294, 1)
 
 [node name="Instructions" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 287.0
-offset_top = 38.0
-offset_right = 287.0
-offset_bottom = 38.0
+offset_left = 277.0
+offset_top = 136.0
+offset_right = -249.0
+offset_bottom = -87.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7t08k")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 244.0
-offset_bottom = 97.0
-script = ExtResource("1_6atnv")
-
-[node name="Label" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 10.0
-offset_right = 518.0
-offset_bottom = 213.0
-text = "Welcome to Ope!
-Move the bowl left 
-and right to catch the kernels."
+offset_left = 77.0
+offset_top = 138.0
+offset_right = 298.0
+offset_bottom = 232.0
+text = "                 Welcome!!
+Move the bowl left and right
+to catch the falling popcorn!"
+label_settings = SubResource("LabelSettings_k4gyn")

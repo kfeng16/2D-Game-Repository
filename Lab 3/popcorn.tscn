@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3avguxkxf641"]
+
+[ext_resource type="Script" path="res://Popcorn.gd" id="1_cc0l1"]
+
+[node name="Popcorn" type="Sprite2D"]
+script = ExtResource("1_cc0l1")
