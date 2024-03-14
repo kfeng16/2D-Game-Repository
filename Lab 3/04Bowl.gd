@@ -22,3 +22,7 @@ func _process(delta):
 	pass
 	pass
 
+# Implement this method if you need to perform some logic when a popcorn collides.
+
+	# ... any other logic you want to happen when a popcorn hits the bowl ...
+
