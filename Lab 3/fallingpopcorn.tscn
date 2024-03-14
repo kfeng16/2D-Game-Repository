@@ -8,6 +8,6 @@
 script = ExtResource("1_4kwh0")
 
 [node name="Popcorn" parent="." instance=ExtResource("2_jblcd")]
-position = Vector2(702.063, -103.938)
+position = Vector2(632, -36)
 scale = Vector2(0.0356345, 0.0405373)
 texture = ExtResource("3_4ap17")

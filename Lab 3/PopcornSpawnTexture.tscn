@@ -6,7 +6,7 @@
 [node name="Popcorn" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(674.063, -175.438)
+position = Vector2(613, -9)
 scale = Vector2(0.0177613, 0.018272)
 texture = ExtResource("1_4pgre")
 script = ExtResource("2_f513u")
