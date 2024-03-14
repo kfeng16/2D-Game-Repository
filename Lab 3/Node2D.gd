@@ -11,10 +11,9 @@ func _ready():
 func _process(delta):
 	time_since_last_spawn += delta
 	
-	# Check if it's time to spawn a new popcorn
 	if time_since_last_spawn >= spawn_rate:
 		spawn_popcorn()
-		time_since_last_spawn = 0 # Reset the timer
+		time_since_last_spawn = 0 
 
 func spawn_popcorn():
 	var popcorn_instance = popcorn_scene.instantiate()
