@@ -1,8 +1,11 @@
 extends Sprite2D
 
+var score = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	add_to_group("Bowl") # Add bowl to a group for easier detection
 	pass
 	
 
@@ -18,3 +21,11 @@ func _process(delta):
 		position.x -= 5
 	pass
 	pass
+
+# Implement this method if you need to perform some logic when a popcorn collides.
+func process_popcorn_collision(popcorn_info):
+	# For example, increment the score.
+	# Make sure to define a score variable in your script.
+	score += 1
+	# ... any other logic you want to happen when a popcorn hits the bowl ...
+

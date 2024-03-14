@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvnmphxbyeg4g"]
+[gd_scene load_steps=5 format=3 uid="uid://bvnmphxbyeg4g"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_4kwh0"]
 [ext_resource type="PackedScene" uid="uid://d3avguxkxf641" path="res://popcorn.tscn" id="2_jblcd"]
 [ext_resource type="Texture2D" uid="uid://cfl7kf5y0w0tg" path="res://pngimg.com - popcorn_PNG3.png" id="3_4ap17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fg141"]
+size = Vector2(1436.2, 942.408)
 
 [node name="PopcornSpawn" type="Node2D"]
 script = ExtResource("1_4kwh0")
@@ -11,3 +14,12 @@ script = ExtResource("1_4kwh0")
 position = Vector2(632, -36)
 scale = Vector2(0.0356345, 0.0405373)
 texture = ExtResource("3_4ap17")
+
+[node name="Area2D" type="Area2D" parent="Popcorn"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Popcorn/Area2D"]
+position = Vector2(39.5938, -2.5)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_fg141")
+
+[connection signal="area_entered" from="Popcorn/Area2D" to="Popcorn" method="_on_area_2d_area_entered"]
