@@ -23,9 +23,6 @@ func _process(delta):
 	pass
 
 # Implement this method if you need to perform some logic when a popcorn collides.
-func process_popcorn_collision(popcorn_info):
-	# For example, increment the score.
-	# Make sure to define a score variable in your script.
-	score += 1
+
 	# ... any other logic you want to happen when a popcorn hits the bowl ...
 

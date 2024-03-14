@@ -32,6 +32,9 @@ func _on_area_2d_area_entered(area):
 	if area.is_in_group("Bowl"):
 		print("Colliding with bowl, attempting to stick.")
 		stick_to_bowl(area.get_parent())  # Assuming the bowl's Area2D is a direct child of the bowl sprite
+		var popcorn_info = get_popcorn_info()
+		var label_node = get_node("$../Score")  # Replace with the actual path to your label node
+		label_node.process_popcorn_collision(popcorn_info["value"])
 	else:
 		stick_to_bowl(area.get_parent())
 		print("Collided with something else: ", area.name)
@@ -39,6 +42,7 @@ func _on_area_2d_area_entered(area):
 func stick_to_bowl(bowl):
 	global_position = Vector2(bowl.global_position.x, bowl.global_position.y)
 	speed = 0
+	self.z_index = bowl.z_index + 1
 	rotation_speed = 0
 	stuck_to_bowl = true
 	set_process(false)

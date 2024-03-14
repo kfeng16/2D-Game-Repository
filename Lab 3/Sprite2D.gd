@@ -1,6 +1,9 @@
 extends Sprite2D
 
-var speed = 150 # Speed of falling
+var speed = 200 # Speed of falling
+var rotation_speed: float
+var stuck_to_bowl: bool = false
+var score = 0
 
 func _ready():
 	# Randomize the starting position
@@ -25,9 +28,14 @@ func _on_area_2d_area_entered(area):
 		print("Collided with something else: ", area.name)
 	
 func stick_to_bowl(bowl):
-	global_position = Vector2(bowl.global_position.x, bowl.global_position.y)
+	self.get_parent().remove_child(self)
+	bowl.add_child(self)
+	self.position = bowl.to_local(global_position)
+	self.z_index = bowl.z_index + 1
 	speed = 0
-	set_process(false)
+	rotation_speed = 0
+	stuck_to_bowl = true
+	set_process(false) #
 
 
 func get_popcorn_info():
