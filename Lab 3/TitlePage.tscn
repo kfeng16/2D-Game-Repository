@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://chwjp0kjrbu2o"]
+[gd_scene load_steps=3 format=3 uid="uid://chwjp0kjrbu2o"]
 
 [ext_resource type="Script" path="res://Control.gd" id="1_ysj12"]
 [ext_resource type="Texture2D" uid="uid://dq7cu7e41ey27" path="res://PopcornMachine.jpeg" id="2_4qgx5"]
-[ext_resource type="Script" path="res://highScore.gd" id="3_w85yd"]
 
 [node name="StartScreen" type="Control"]
 layout_mode = 3
@@ -31,14 +30,5 @@ text = "Ope! Click to start."
 icon = ExtResource("2_4qgx5")
 icon_alignment = 1
 vertical_icon_alignment = 0
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 61.0
-offset_top = 75.0
-offset_right = 305.0
-offset_bottom = 298.0
-text = "df"
-script = ExtResource("3_w85yd")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control" method="_on_button_pressed"]
