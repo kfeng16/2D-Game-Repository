@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://3m2a58rhldv2"]
+[gd_scene load_steps=11 format=3 uid="uid://3m2a58rhldv2"]
 
 [ext_resource type="Texture2D" uid="uid://da70qcoedyiuk" path="res://Unknown.jpeg" id="1_ymnw2"]
 [ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="2_jkrsd"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://score.gd" id="6_1hr1c"]
 [ext_resource type="PackedScene" uid="uid://dlfixd0iugw6g" path="res://instructions.tscn" id="6_cbmrr"]
 [ext_resource type="PackedScene" uid="uid://bmst6ty6kkfhp" path="res://countdown.tscn" id="7_1qruf"]
+[ext_resource type="Script" path="res://endGame.gd" id="8_elbor"]
+[ext_resource type="Script" path="res://bg.gd" id="9_26f5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6oeb8"]
 size = Vector2(26.7801, 22.9362)
@@ -59,6 +61,31 @@ offset_top = -5.0
 offset_right = -44.0
 offset_bottom = -5.0
 
+[node name="Final Screen" type="Label" parent="."]
+z_index = 10
+offset_left = -40.0
+offset_top = -11.0
+offset_right = 1164.0
+offset_bottom = 662.0
+pivot_offset = Vector2(219, 56.5)
+theme_override_font_sizes/font_size = 25
+text = "here"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+script = ExtResource("8_elbor")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -40.0
+offset_top = -11.0
+offset_right = 1193.0
+offset_bottom = 675.0
+color = Color(0.368627, 0.4, 0.454902, 1)
+script = ExtResource("9_26f5g")
+
 [connection signal="area_entered" from="04Bowl/Area2D" to="04Bowl" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="04Bowl/Area2D" to="Label" method="_on_area_2d_area_entered"]
 [connection signal="stop" from="Node2D" to="Label" method="_on_node_2d_stop"]
+[connection signal="final" from="Label" to="04Bowl" method="_on_label_final"]
+[connection signal="final" from="Label" to="Final Screen" method="_on_label_final"]
+[connection signal="final" from="Label" to="ColorRect" method="_on_label_final"]

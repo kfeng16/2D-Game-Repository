@@ -4,7 +4,7 @@ var popcorn_scene = preload("res://Working scnee.tscn") # Adjust the path to you
 var spawn_rate = 0.5 # Time in seconds between spawns
 var time_since_last_spawn = 0.0
 var total_time_elapsed = 0 # Variable to track total time elapsed
-var spawn_duration = 15.0 # Duration in seconds after which spawning stops
+@export var spawn_duration = 30 # Duration in seconds after which spawning stops
 var spawning_enabled = true # Flag to control spawning
 var flag = true
 signal stop

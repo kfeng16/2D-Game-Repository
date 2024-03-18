@@ -1,6 +1,7 @@
 extends Label
 
 var score:int = 0
+signal final(number)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,5 +23,6 @@ func _on_area_2d_area_entered(area):
 
 
 func _on_node_2d_stop():
+	emit_signal("final",score)
 	Global.update_final_score(score)
 	pass # Replace with function body.

@@ -23,13 +23,12 @@ func _process(delta):
 		
 	pass
 
-func _on_spawning_stopped():
-	flag = false
-# Implement this method if you need to perform some logic when a popcorn collides.
-
-	# ... any other logic you want to happen when a popcorn hits the bowl ...
-
 
 
 func _on_area_2d_area_entered(area):
 	area.get_node("../..").queue_free()
+
+
+func _on_label_final(number):
+	flag = false
+	pass # Replace with function body.
