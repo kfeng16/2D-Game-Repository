@@ -1,6 +1,7 @@
 extends Sprite2D
 
 var score = 0
+var flag = true
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,13 +16,15 @@ func _process(delta):
 	var viewport_size = get_viewport_rect().size
 	var viewport_height = viewport_size.y
 	var viewport_width = viewport_size.x
-	if Input.is_action_pressed("ui_right") && position.x < viewport_width:
+	if Input.is_action_pressed("ui_right") && position.x < viewport_width && flag == true:
 		position.x += 10
-	if Input.is_action_pressed("ui_left") && position.x > 0:
+	if Input.is_action_pressed("ui_left") && position.x > 0 && flag == true:
 		position.x -= 10
-	pass
+		
 	pass
 
+func _on_spawning_stopped():
+	flag = false
 # Implement this method if you need to perform some logic when a popcorn collides.
 
 	# ... any other logic you want to happen when a popcorn hits the bowl ...

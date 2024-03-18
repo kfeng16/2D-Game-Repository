@@ -47,7 +47,6 @@ func stick_to_bowl(bowl):
 	stuck_to_bowl = true
 	set_process(false)
 
-
 func get_popcorn_info():
 	return {
 	"value": 10,  # As an example, each popcorn could represent 10 points.

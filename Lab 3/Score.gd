@@ -19,3 +19,8 @@ func _on_sprite_2d_counter():
 
 func _on_area_2d_area_entered(area):
 	update_score_display() # Replace with function body.
+
+
+func _on_node_2d_stop():
+	Global.update_final_score(score)
+	pass # Replace with function body.
