@@ -21,11 +21,11 @@ script = ExtResource("1_0s421")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 77.0
-offset_top = 138.0
-offset_right = 298.0
-offset_bottom = 232.0
-text = "                 Welcome!!
-Move the bowl left and right
-to catch the falling popcorn!"
+offset_left = -85.0
+offset_top = 74.0
+offset_right = 611.0
+offset_bottom = 206.0
+text = "                                    Welcome!!
+     Move the bowl left and right with the left and  
+     right arrow keys to catch the falling popcorn!"
 label_settings = SubResource("LabelSettings_k4gyn")
