@@ -11,13 +11,14 @@ func _ready():
 func update_score_display():
 	score += 1
 	text = str(score)
-
+	
 func _on_sprite_2d_counter():
 	update_score_display()
 	pass # Replace with function body.
 
 
 func _on_area_2d_area_entered(area):
+	$"../Pop".play()
 	update_score_display() # Replace with function body.
 
 

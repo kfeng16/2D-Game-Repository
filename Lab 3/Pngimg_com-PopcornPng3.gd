@@ -29,6 +29,7 @@ func _process(delta):
 		rotation += rotation_speed * delta  # Ensure rotation_speed is in radians if using rotate().
 		
 func _on_area_2d_area_entered(area):
+	$Pop.play()
 	if area.is_in_group("Bowl"):
 		print("Colliding with bowl, attempting to stick.")
 		stick_to_bowl(area.get_parent())  # Assuming the bowl's Area2D is a direct child of the bowl sprite

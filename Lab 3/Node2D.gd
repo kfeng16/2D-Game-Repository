@@ -12,8 +12,7 @@ signal stop
 
 func _ready():
 	randomize() # Ensure random numbers are different each time you run the scene
-	$"../AudioStreamPlayer2D".play()
-
+	$"../Background".play()
 func _process(delta):
 	if spawning_enabled:
 		time_since_last_spawn += delta

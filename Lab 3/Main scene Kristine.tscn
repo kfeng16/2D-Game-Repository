@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://3m2a58rhldv2"]
+[gd_scene load_steps=13 format=3 uid="uid://3m2a58rhldv2"]
 
 [ext_resource type="Texture2D" uid="uid://da70qcoedyiuk" path="res://Unknown.jpeg" id="1_ymnw2"]
 [ext_resource type="Texture2D" uid="uid://25qayymeuapc" path="res://04_bowl.png" id="2_jkrsd"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://endGame.gd" id="8_elbor"]
 [ext_resource type="Script" path="res://bg.gd" id="9_26f5g"]
 [ext_resource type="AudioStream" uid="uid://ddx52wg7tf54" path="res://background-music.wav" id="10_p2fnm"]
+[ext_resource type="AudioStream" uid="uid://cmonqn8fm6dyt" path="res://8bit Click Sound Effect.mp3" id="11_6rt6n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6oeb8"]
 size = Vector2(26.7801, 22.9362)
@@ -84,9 +85,12 @@ offset_bottom = 675.0
 color = Color(0.368627, 0.4, 0.454902, 1)
 script = ExtResource("9_26f5g")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Background" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_p2fnm")
-volume_db = 12.188
+volume_db = -28.662
+
+[node name="Pop" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_6rt6n")
 
 [connection signal="area_entered" from="04Bowl/Area2D" to="04Bowl" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="04Bowl/Area2D" to="Label" method="_on_area_2d_area_entered"]
