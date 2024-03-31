@@ -10,7 +10,6 @@ func _ready():
 # This function updates the label text to display the current score.
 func update_score_display():
 	score += 1
-	prints("score", score)
 	text = str(score)
 
 func _on_sprite_2d_counter():

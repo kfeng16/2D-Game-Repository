@@ -16,9 +16,9 @@ func _process(delta):
 
 
 func _on_label_final(number):
+	$"../AudioStreamPlayer2D".stop()
 	text = "hello"
 	visible = true
-	print('in endGame', initialScores)
 	var scores = JSON.parse_string(initialScores)
 	if scores[4]["score"] < number:
 		text = "Congradulations you got " + str(number) + ". You made the leaderboard. \n"
