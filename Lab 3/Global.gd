@@ -17,7 +17,9 @@ func save(content): # Corrected to use the File class.
 	print(data)
 	var topScores = JSON.parse_string(data)
 	topScores.append({"name" : "Name6", "score": content})
+	print('before sort', topScores)
 	topScores.sort()
+	print('after sort', topScores)
 	topScores.pop_back()
 	
 	prints('fromt top score', topScores)
